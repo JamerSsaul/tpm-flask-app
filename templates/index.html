@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Registro TPM</title></head>
+<body>
+  <h2>Registrar Mantenimiento</h2>
+  <form action="/guardar" method="post">
+    <input type="text" name="nombre" placeholder="Nombre máquina" required><br>
+    <input type="text" name="tipo" placeholder="Tipo mantenimiento" required><br>
+    <textarea name="descripcion" placeholder="Descripción" required></textarea><br>
+    <button type="submit">Guardar</button>
+  </form>
+  <a href="/ver">Ver registros</a> | <a href="/exportar">Exportar Excel</a> | <a href="/oee">Calcular OEE</a>
+</body>
+</html>

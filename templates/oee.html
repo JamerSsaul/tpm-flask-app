@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Calcular OEE</title></head>
+<body>
+  <h2>Calcular OEE</h2>
+  <form method="post">
+    Tiempo disponible (horas): <input type="number" name="td" step="0.01" required><br>
+    Tiempo operación (horas): <input type="number" name="to" step="0.01" required><br>
+    Productos buenos: <input type="number" name="pb" required><br>
+    Productos totales: <input type="number" name="pt" required><br>
+    <button type="submit">Calcular</button>
+  </form>
+  {% if resultado %}
+    <h3>Resultado OEE: {{ resultado }}%</h3>
+  {% endif %}
+  <a href="/">Volver</a>
+</body>
+</html>

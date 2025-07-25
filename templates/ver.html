@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mantenimientos</title></head>
+<body>
+  <h2>Mantenimientos Registrados</h2>
+  <table border="1">
+    <tr><th>Máquina</th><th>Tipo</th><th>Descripción</th></tr>
+    {% for row in data %}
+    <tr>
+      <td>{{ row[0] }}</td>
+      <td>{{ row[1] }}</td>
+      <td>{{ row[2] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/">Volver</a>
+</body>
+</html>
